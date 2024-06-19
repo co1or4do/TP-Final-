@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+}
+
+#Nombre {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    font-weight: 700;
+    font-size: 200;
+    letter-spacing: 5px;
+    color: rgb(61, 229, 201);
+}
+
+#Desc {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    font-weight: 300;
+    font-size: 10;
+    letter-spacing: 1px;
+    color: rgb(9, 9, 72);
+    width: 100%;
+    margin:  auto;
+    display: block;
+}
+
+#Port {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    font-weight: 700;
+    font-size: 200;
+    letter-spacing: 5px;
+    color: rgb(9, 9, 72);
+    margin-top: 40px; 
+}
+
+#Nombre, #Desc, #Port {
+    margin: 15px;
+}
+
+@keyframes bajador {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+header {
+    background-color: white;
+    color: rgb(61, 229, 201);
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 50px;
+    animation-name: bajador;
+    animation-duration: 3s;
+    animation-fill-mode: backwards;
+}
+
+header a {
+    background-color: white;
+    color: rgb(9, 9, 72);
+    border: 1px solid  rgb(61, 229, 201);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    width: 200px;
+    height: 30px;
+    margin: auto;
+    line-height: 30px;
+    transition: all 3s;
+    border-radius: 10px;
+}
+
+a:hover {
+    background-color: rgb(9, 9, 72);
+    color: rgb(61, 229, 201);
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 5px;
+}
+
+video {
+    width: 60%;
+    display: block;
+    margin: 60px auto;
+}
+
+div.img-container {
+    width: 45%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+img {
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+.hover-effect {
+    position: absolute;
+    bottom: 0;
+    left: 15%; 
+    width: 70%; 
+    height: 30px;
+    background: rgba(10, 199, 216, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 18px;
+    font-family: "Roboto Mono", monospace;
+}
+
+div.img-container:hover .hover-effect {
+    opacity: 1;
+}
+
+footer {
+    background-color: white;
+    color: rgb(61, 229, 201);
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    padding: 15px 15%;
+    margin-top: 30px;
+    border-top: 1px solid rgb(61, 229, 201);
+}
